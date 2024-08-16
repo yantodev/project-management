@@ -21,7 +21,13 @@ class DefaultUserSeeder extends Seeder
                 'email' => 'john.doe@helper.app',
                 'password' => bcrypt('Passw@rd'),
                 'email_verified_at' => now()
-            ]);
+            ],
+                [
+                    'name' => 'Eko Cahyanto',
+                    'email' => 'ekocahyanto007@gmail.com',
+                    'password' => bcrypt('Passw@rd'),
+                    'email_verified_at' => now()
+                ]);
             $user->creation_token = null;
             $user->save();
         }
